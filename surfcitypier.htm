@@ -1,0 +1,40 @@
+<html>
+
+	<!-- Flowplayer skin -->
+	<link rel="stylesheet" href="https://releases.flowplayer.org/7.2.6/skin/skin.css">
+	<!-- Flowplayer hlsjs plugin -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/0.10.1/hls.light.min.js"></script>
+	<!-- Flowplayer core -->
+	<script src="https://releases.flowplayer.org/7.2.7/commercial/flowplayer.min.js"></script>
+
+<body>
+
+	<div id="fp-hlsjs" data-key="“$653869339410103&quot;" class="is-closeable"></div>
+	<script>
+	flowplayer("#fp-hlsjs", {
+		live: true,
+		autoplay: true,
+		twitter: false,
+		key:"$653869339410103",
+		logo:"http://surfchex.com/jwplayer/logo_white.png",
+		//adaptiveRatio: true,
+		// optional: HLS levels offered for manual selection
+		// hlsQualities: true,
+		clip: {
+			sources: [
+				{ type: "application/x-mpegurl",
+				  src:  "http://169.47.9.197:1935/live/sc.stream/playlist.m3u8" }
+			]
+		},
+		embed: false
+	});
+	</script>
+
+</body>
+</html>
+
+
+
+	
+
+
